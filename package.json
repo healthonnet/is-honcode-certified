@@ -15,11 +15,16 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "jshint . && jscs ."
+    "test": "jshint . && jscs . && mocha"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
     "jscs": "^3.0.7",
-    "jshint": "~2.9.4"
+    "jshint": "~2.9.4",
+    "mocha": "^3.2.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "honcode-certification-list": "0.0.2",
+    "honcode-certification-utils": "0.0.1"
+  }
 }
