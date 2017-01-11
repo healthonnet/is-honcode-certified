@@ -11,6 +11,11 @@
   "author": "William Belle <william.belle@gmail.com>",
   "license": "Apache-2.0",
   "repository": "https://github.com/healthonnet/is-honcode-certified.git",
+  "bin": "src/bin/cli.js",
+  "files": [
+    "src/lib/index.js",
+    "src/bin/cli.js"
+  ],
   "engines": {
     "node": ">=4"
   },
