@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "honcode-certification-list": "0.0.2",
-    "honcode-certification-utils": "0.0.1"
+    "honcode-certification-utils": "0.0.1",
+    "yargs": "^6.6.0"
   }
 }
