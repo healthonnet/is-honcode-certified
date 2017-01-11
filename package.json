@@ -14,7 +14,11 @@
   "engines": {
     "node": ">=4"
   },
-  "scripts": {},
-  "devDependencies": {},
+  "scripts": {
+    "test": "jshint ."
+  },
+  "devDependencies": {
+    "jshint": "~2.9.4"
+  },
   "dependencies": {}
 }
