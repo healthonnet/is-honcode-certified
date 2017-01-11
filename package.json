@@ -1,0 +1,20 @@
+{
+  "name": "is-honcode-certified",
+  "version": "0.0.1",
+  "description": "Check if a website is HONcode certified",
+  "keywords": [
+    "HONcode",
+    "Certification",
+    "HON",
+    "Health On the Net"
+  ],
+  "author": "William Belle <william.belle@gmail.com>",
+  "license": "Apache-2.0",
+  "repository": "https://github.com/healthonnet/is-honcode-certified.git",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {},
+  "devDependencies": {},
+  "dependencies": {}
+}
