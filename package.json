@@ -15,9 +15,10 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "jshint ."
+    "test": "jshint . && jscs ."
   },
   "devDependencies": {
+    "jscs": "^3.0.7",
     "jshint": "~2.9.4"
   },
   "dependencies": {}
