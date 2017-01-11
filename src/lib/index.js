@@ -3,8 +3,6 @@
 var HONcodeCertificationList = require('honcode-certification-list');
 var HONcodeUtils = require('honcode-certification-utils');
 
-var Promise = require('bluebird');
-
 exports.isHONcodeCertified = function(url) {
 
   // Get HONcode list
