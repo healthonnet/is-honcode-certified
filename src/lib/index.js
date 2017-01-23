@@ -9,6 +9,7 @@ exports.isHONcodeCertified = function(url) {
   return HONcodeCertificationList.getHONcodeCertificationList().then(
     function(hash) {
       // Prepare url
+      url = HONcodeUtils.addTrailingSlash(url);
       url = HONcodeUtils.formatUrl(url);
       var listUrls = HONcodeUtils.buildUrlToCheck(url);
 
