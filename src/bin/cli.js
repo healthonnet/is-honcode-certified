@@ -15,14 +15,25 @@ var yargs = require('yargs')
   .help('?')
   .alias('?', 'help');
 
-var argv = yargs.argv;
+var argv  = yargs.argv;
+var hon   = require('../lib/index.js');
+var utils = require('honcode-certification-utils');
 
-var hon = require('../lib/index.js');
-
-hon.isHONcodeCertified(argv.url).then(function(isCertified) {
+var certifiedUrl = function(isCertified) {
   if (isCertified) {
     console.log('\n🦄   It\'s safe\n');
   } else {
     console.log('\n👻   Be careful\n');
   }
-});
+};
+
+if (typeof argv.url !== 'string') {
+  console.log(argv.url + ' is not a valid url');
+  process.exit(1);
+}
+
+if (utils.isValidUrl(argv.url)) {
+  hon.isHONcodeCertified(argv.url).then(certifiedUrl);
+} else {
+  console.log(argv.url + ' is not a valid url');
+}
