@@ -6,8 +6,17 @@ var isHONcodeCertified = require('../src/lib/index.js');
 describe('is HONcode Certified', function() {
   this.timeout(15000);
 
-  it('should return true for webmd.com', function(done) {
+  it('should return true for webmd.com/', function(done) {
     isHONcodeCertified.isHONcodeCertified('http://www.webmd.com/').then(
+      function(isCertified) {
+        isCertified.should.equal(true);
+        done();
+      }
+    );
+  });
+
+  it('should return true for webmd.com', function(done) {
+    isHONcodeCertified.isHONcodeCertified('http://www.webmd.com').then(
       function(isCertified) {
         isCertified.should.equal(true);
         done();
