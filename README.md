@@ -68,7 +68,8 @@ See [Contributing](CONTRIBUTING.md).
 Developer
 ---------
 
-  * William BELLE
+  * [William BELLE](https://github.com/williambelle)
+  * [Cedric FROSSARD](https://github.com/Adrion)
 
 License
 -------
