@@ -21,17 +21,35 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "jshint . && jscs . && mocha",
+    "test": "jshint . && eslint . && mocha",
     "coverage": "istanbul cover _mocha",
     "coveralls": "npm run coverage -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
   "devDependencies": {
     "chai": "^4.1.2",
     "istanbul": "^0.4.5",
-    "jscs": "^3.0.7",
     "jshint": "~2.9.5",
+    "eslint": "^5.4.0",
     "mocha": "^4.0.1"
   },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "globals": {
+      "it": true,
+      "describe": true
+    },
+    "rules": {
+      "no-console": "off"
+    }
+  },
+  "eslintIgnore": [
+    "node_modules/**",
+    "coverage/**"
+  ],
   "dependencies": {
     "honcode-certification-list": "0.0.6",
     "honcode-certification-utils": "0.0.2",
