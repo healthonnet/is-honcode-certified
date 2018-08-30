@@ -3,7 +3,6 @@ Is HONcode Certified
 
 [![Build Status][travis-image]][travis-url]
 [![Coverage Status][coverage-image]][coverage-url]
-[![Dependency Status][gemnasium-image]][gemnasium-url]
 [![NPM version][npm-image]][npm-url]
 
 Is HONcode Certified NPM module
@@ -69,7 +68,8 @@ See [Contributing](CONTRIBUTING.md).
 Developer
 ---------
 
-  * William BELLE
+  * [William BELLE](https://github.com/williambelle)
+  * [Cedric FROSSARD](https://github.com/Adrion)
 
 License
 -------
@@ -82,5 +82,3 @@ Apache License 2.0
 [travis-url]: https://travis-ci.org/healthonnet/is-honcode-certified
 [coverage-image]: https://coveralls.io/repos/github/healthonnet/is-honcode-certified/badge.svg
 [coverage-url]: https://coveralls.io/github/healthonnet/is-honcode-certified
-[gemnasium-image]: https://gemnasium.com/badges/github.com/healthonnet/is-honcode-certified.svg
-[gemnasium-url]: https://gemnasium.com/github.com/healthonnet/is-honcode-certified

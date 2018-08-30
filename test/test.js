@@ -1,6 +1,6 @@
 'use strict';
 
-var should = require('chai').should();
+require('chai').should();
 var isHONcodeCertified = require('../src/lib/index.js');
 
 describe('is HONcode Certified', function() {
